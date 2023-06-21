@@ -2,6 +2,8 @@
   <article>
     <header>
       <h1>{{ .Title }}</h1>
+      <br>
+      {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
     </header>
 
     {{ .Content }}
