@@ -1,9 +1,11 @@
 <section class="container page">
   <article>
     <header>
-      <h1>{{ .Title }}</h1>
-      <br>
-      {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ .Title }}
+        </a>
+      </h1>
     </header>
 
     {{ .Content }}
