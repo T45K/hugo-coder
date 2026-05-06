@@ -13,8 +13,13 @@ pagerSize = 6
 # Enable Disqus comments
 # shortname = "yourdiscussshortname"
 
+[markup]
 [markup.highlight]
 noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
 author = "John Doe"
@@ -70,6 +75,10 @@ customRemoteJS = []
 # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
 # [params.cloudflare]
 # token = "token"
+
+# If you want to use Counter.dev(https://counter.dev) for analytics, add this section
+# [params.counterdev]
+# id = "data-id"
 
 # If you want to use Matomo(https://matomo.org) for analytics, add this section
 # [params.matomo]
